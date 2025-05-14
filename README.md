@@ -1,5 +1,5 @@
-# Script-Station-Blanche
-Script permettant de recharger l'image des clients de station blanche a chaque redémarrage avec stockage persistant
+# Script-Station-Internet
+Script permettant de recharger l'image des clients de station internet a chaque redémarrage avec stockage persistant
 ```bash
 #!/bin/bash
 
