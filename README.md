@@ -7,7 +7,7 @@
 
 **📌 - Ce script doit être ajouté et exécuté au démarrage de la session de l'utilisateur.**
 
-**📍​ - Script Bash**
+**📍​ - Script Bash :**
 ```bash
 #!/bin/bash
 
