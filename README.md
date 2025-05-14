@@ -6,6 +6,8 @@
 # Script-Station-Internet-LTSP
 Ce script permet d'effectuer une mise à jour de l'image LTSP. Il vérifie d'abord si un fichier flag existe pour éviter des exécutions multiples, puis lance une synchronisation avec un serveur via ```rsync```, en excluant certains dossiers. Après la mise à jour, le système redémarre automatiquement pour appliquer les modifications.
 
+**📌 Ce script doit être ajouté et exécuté au démarrage de la session de l'utilisateur.**
+
 ```bash
 #!/bin/bash
 
