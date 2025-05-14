@@ -1,12 +1,12 @@
 # Informations
 
-1. LTSP version : 23.02-1+deb12u1
-2. Debian 12
+📦 - LTSP version : 23.02-1+deb12u1
+📦 - Debian 12
 
 # Script-Station-Internet-LTSP
-Ce script permet d'effectuer une mise à jour de l'image LTSP. Il vérifie d'abord si un fichier flag existe pour éviter des exécutions multiples, puis lance une synchronisation avec un serveur via ```rsync```, en excluant certains dossiers. Après la mise à jour, le système redémarre automatiquement pour appliquer les modifications.
+📄 - Ce script permet d'effectuer une mise à jour de l'image LTSP. Il vérifie d'abord si un fichier flag existe pour éviter des exécutions multiples, puis lance une synchronisation avec un serveur via ```rsync```, en excluant certains dossiers. Après la mise à jour, le système redémarre automatiquement pour appliquer les modifications.
 
-**📌 Ce script doit être ajouté et exécuté au démarrage de la session de l'utilisateur.**
+**📌 - Ce script doit être ajouté et exécuté au démarrage de la session de l'utilisateur.**
 
 ```bash
 #!/bin/bash
