@@ -1,5 +1,6 @@
 # Script-Station-Internet-LTSP
-Script permettant de recharger l'image des clients de station internet LTSP a chaque redémarrage avec stockage persistant
+Ce script permet d'effectuer une mise à jour et une synchronisation des fichiers du système LTSP. Il vérifie d'abord si un fichier flag existe pour éviter des exécutions multiples, puis lance une synchronisation avec un serveur via rsync, en excluant certains dossiers. Après la mise à jour, le système redémarre automatiquement pour appliquer les modifications.
+
 ```bash
 #!/bin/bash
 
