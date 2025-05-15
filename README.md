@@ -19,7 +19,7 @@
 
 ### 📌 À savoir
 
-- Ce script doit être **ajouté et exécuté automatiquement au démarrage de la session utilisateur**.  
+- Ce script doit être **exécuté automatiquement au démarrage de la session utilisateur**.  
 - Il est écrit en **Bash** et doit être lancé avec les droits nécessaires.
 ```bash
 chmod +x /etc/script/reloadimage
