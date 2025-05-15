@@ -1,19 +1,28 @@
-# Informations
+# 🧾 Informations
 
-​📦​ - LTSP version : 23.02-1+deb12u1
+- 📦 **LTSP version** : `23.02-1+deb12u1`  
+- 🐧 **Distribution** : Debian 12
 
-📦​ - Debian 12
+---
 
-# Description du script 
-**Ce script assure la mise à jour automatisée de l'image LTSP utilisée par les postes clients d’un environnement en réseau. Pour garantir la sécurité et l'intégrité du processus, il commence par vérifier l’existence d’un fichier témoin (flag) permettant d’éviter une exécution multiple simultanée du script.**
+# ⚙️ Description du script
 
-**S’il n’est pas déjà en cours d’exécution, le script procède à une synchronisation de l’image système à l’aide de la commande rsync, en se connectant à un serveur distant. Certains dossiers critiques ou temporaires sont explicitement exclus de la synchronisation afin de préserver la stabilité et la cohérence de l’image.**
+Ce script assure la **mise à jour automatisée de l’image LTSP** utilisée par les postes clients dans un environnement en réseau.
 
-**Une fois la mise à jour terminée, un redémarrage du système est déclenché automatiquement afin de garantir que tous les changements prennent effet dès le prochain démarrage des clients LTSP.**
+🔒 Avant toute action, il vérifie la présence d’un **fichier flag** afin d’éviter les exécutions multiples ou simultanées, ce qui pourrait provoquer des conflits.
 
--------------------------------------------------------------------------------------------
+🔄 Ensuite, il effectue une **synchronisation via `rsync`** avec un serveur distant, tout en **excluant certains dossiers critiques** ou temporaires (comme `/proc`, `/dev`, etc.) pour garantir la stabilité de l’image.
 
-**📌 - Ce script doit être ajouté et exécuté au démarrage de la session de l'utilisateur.**
+🔁 Une fois la mise à jour terminée, le script **déclenche automatiquement un redémarrage** du système pour que les modifications soient prises en compte dès le prochain démarrage des clients LTSP.
+
+---
+
+## 📌 À savoir
+
+- Ce script doit être **ajouté et exécuté automatiquement au démarrage de la session utilisateur**.  
+- Il est écrit en **Bash** et doit être lancé avec les droits nécessaires.
+
+---
 
 **🐧​ - Script Bash :**
 ```bash
