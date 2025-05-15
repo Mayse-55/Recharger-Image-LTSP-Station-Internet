@@ -1,9 +1,14 @@
-# 📢​ - Informations
+# Informations
 
 1. LTSP version : 23.02-1+deb12u1
 2. Debian 12
-----------------------------------------------------------------------------
-**📄 - Ce script permet d'effectuer une mise à jour de l'image LTSP. Il vérifie d'abord si un fichier flag existe pour éviter des exécutions multiples, puis lance une synchronisation avec un serveur via** ```rsync```**, en excluant certains dossiers. Après la mise à jour, le système redémarre automatiquement pour appliquer les modifications.**
+
+# Description du script 
+**📄 - Ce script assure la mise à jour automatisée de l'image LTSP utilisée par les postes clients d’un environnement en réseau. Pour garantir la sécurité et l'intégrité du processus, il commence par vérifier l’existence d’un fichier témoin (flag) permettant d’éviter une exécution multiple simultanée du script.
+
+S’il n’est pas déjà en cours d’exécution, le script procède à une synchronisation de l’image système à l’aide de la commande rsync, en se connectant à un serveur distant. Certains dossiers critiques ou temporaires sont explicitement exclus de la synchronisation afin de préserver la stabilité et la cohérence de l’image.
+
+Une fois la mise à jour terminée, un redémarrage du système est déclenché automatiquement afin de garantir que tous les changements prennent effet dès le prochain démarrage des clients LTSP.**
 
 **📌 - Ce script doit être ajouté et exécuté au démarrage de la session de l'utilisateur.**
 
