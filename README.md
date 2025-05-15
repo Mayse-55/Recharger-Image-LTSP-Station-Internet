@@ -1,6 +1,7 @@
 # Informations
 
 ​📦​ - LTSP version : 23.02-1+deb12u1
+
 📦​ - Debian 12
 
 # Description du script 
