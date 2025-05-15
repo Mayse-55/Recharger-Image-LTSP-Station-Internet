@@ -10,6 +10,8 @@
 
 **Une fois la mise à jour terminée, un redémarrage du système est déclenché automatiquement afin de garantir que tous les changements prennent effet dès le prochain démarrage des clients LTSP.**
 
+-------------------------------------------------------------------------------------------
+
 **📌 - Ce script doit être ajouté et exécuté au démarrage de la session de l'utilisateur.**
 
 **🐧​ - Script Bash :**
