@@ -7,13 +7,13 @@
 
 # ⚙️ Description du script
 
-Ce script assure la **mise à jour automatisée de l’image LTSP** utilisée par les postes clients dans un environnement en réseau.
+**📄 Ce script assure la **mise à jour automatisée de l’image LTSP** utilisée par les postes clients dans un environnement en réseau.**
 
-🔒 Avant toute action, il vérifie la présence d’un **fichier flag** afin d’éviter les exécutions multiples ou simultanées, ce qui pourrait provoquer des conflits.
+**Avant toute action, il vérifie la présence d’un **fichier flag** afin d’éviter les exécutions multiples ou simultanées, ce qui pourrait provoquer des conflits.**
 
-🔄 Ensuite, il effectue une **synchronisation via `rsync`** avec un serveur distant, tout en **excluant certains dossiers critiques** ou temporaires (comme `/Bureau`, `/Images`, etc.) pour garantir la stabilité de l’image.
+**Ensuite, il effectue une **synchronisation via `rsync`** avec un serveur distant, tout en **excluant certains dossiers critiques** ou temporaires (comme `/Bureau`, `/Images`, etc.) pour garantir la stabilité de l’image.**
 
-🔁 Une fois la mise à jour terminée, le script **déclenche automatiquement un redémarrage** du système pour que les modifications soient prises en compte dès le prochain démarrage des clients LTSP.
+**Une fois la mise à jour terminée, le script **déclenche automatiquement un redémarrage** du système pour que les modifications soient prises en compte dès le prochain démarrage des clients LTSP.**
 
 ---
 
